@@ -105,6 +105,30 @@ while True:
                 else:
                     print("Fruit are not available in Fruit")
 
+            else:
+                print("Invalid operation. Please try again")
+
+            perform = input('Do you want to perform more operations Press "y" for yes or "n" for no: ')
+            if perform.lower() != 'y':
+                break
+# Customer Choice
+    if Role == 2:
+
+        while True:
+            print("")
+            print(" "*20,"Welcome to Customer's App")
+            print(" ")
+            print(" "*20,"1) Parchest Fruit")
+            print(" "*20,"2) View Fruit")
+
+
+            Operaction = input("Enter Operaction You Want To Perform : ")
+
+            try: # Try use for only Accept int Value
+                Operaction = int(Operaction)
+            except ValueError:
+                print("Error Caught : Enter Numberical Value ")
+
 
                     
 # Data save using File Management
